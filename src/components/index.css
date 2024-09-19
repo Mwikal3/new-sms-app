@@ -1,0 +1,108 @@
+/*body*/
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/*sidebar styles */
+
+/* src/components/Navbar.css */
+
+
+
+
+/* src/components/Button.css */
+/* .button {
+  background-color: #4472C4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.button .icon {
+  margin-right: 10px;
+} */
+/* src/components/Dashboard.css */
+
+
+
+/* src/components/Statistics.css */
+
+
+
+/* src/components/KPI.css */
+
+
+
+/* src/components/LastMessages.css */
+
+
+
+/* CreateCampaign.css */
+
+/* Sidebar */
+/* .sidebar {
+  width: 240px;
+  background-color: #4472C4;
+  height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.dropdown ul {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 5px 0;
+} */
+
+/* Main Content */
+
+/* Basic structure and layout */
+/* contact management */
+
+/* Basic structure */

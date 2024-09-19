@@ -1,0 +1,25 @@
+.kpi-cards {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .kpi-card {
+    flex: 1;
+    background-color: #4472C4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kpi-card:last-child {
+    margin-right: 0;
+  }
+  
+  .kpi-card:hover {
+    background-color: #335599;
+    cursor: pointer;
+  }

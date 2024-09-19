@@ -1,0 +1,41 @@
+.last-messages {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .last-messages h3 {
+    margin-bottom: 20px;
+  }
+  
+  .date-filters {
+    margin-bottom: 10px;
+  }
+  
+  .date-filters input {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }

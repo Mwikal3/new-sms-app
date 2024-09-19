@@ -1,0 +1,177 @@
+/* Basic structure */
+.contact-details {
+    padding: 20px;
+  }
+  
+  /* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+   */
+  .header h2 {
+    margin: 0;
+  }
+  
+  .home-link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Top section styling */
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .group-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .info-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  
+  .upload-section {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .file-input {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .upload-btn {
+    background-color: #4472C4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .upload-btn:hover {
+    background-color: #365f9e;
+  }
+  
+  /* Toolbar styling */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .entries select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-btn {
+    padding: 5px 10px;
+    background-color: #4472C4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actions button {
+    padding: 8px;
+    background-color: #4472C4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .actions button:hover {
+    background-color: #365f9e;
+  }
+  
+  /* Table styling */
+  .contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .contacts-table th, .contacts-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contacts-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ff4c4c;
+    color: white;
+  }
+  
+  .action-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #e6b800;
+  }
+  
+  .delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .action-btn:hover {
+    background-color: #218838;
+  }
+  
