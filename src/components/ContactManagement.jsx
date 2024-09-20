@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/contact-management.css';
 import ExpressTemplate from '../components/ExpressTemplate'; // Import the form component
+import { Link } from 'react-router-dom';
 
 const ContactManagement = () => {
   const [showExpressMessageForm, setShowExpressMessageForm] = useState(false); // State to toggle express message form
@@ -26,7 +27,10 @@ const ContactManagement = () => {
 
   return (
     <div className="contact-management">
+       <Link to="/"><span>Home</span></Link> 
+
       <div className="toolbar">
+
         <div className="entries">
           <label>Entries</label>
           <input type="number" placeholder="Number of entries" />

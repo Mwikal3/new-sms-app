@@ -1,33 +1,72 @@
 .statistics {
-    flex: 2;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.statistics h3 {
+  margin-bottom: 20px;
   
-  .statistics h3 {
-    margin-bottom: 20px;
-  }
-  
-  .charts {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .bar-chart, .pie-chart {
-    width: 48%;
-  }
-  
-  .bar-chart h4, .pie-chart h4 {
-    margin-bottom: 10px;
-  }
-  
-  .chart {
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-chart, .pie-chart {
+  width: 48%;
+}
+
+.bar-chart h4, .pie-chart h4 {
+  margin-bottom: 10px;
+}
+
+.chart {
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* New class to contain the pie chart and KPI cards together */
+.pie-kpi-container {
+  display: flex;
+  align-items: flex-start; /* Align content at the top */
+  justify-content: space-between;
+  width: 48%;
+}
+
+/* KPI cards should be smaller and sit next to the pie chart */
+.kpi-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px; /* Space between pie chart and KPI cards */
+  width: 40%; /* Adjust width for KPI cards to fit better */
+}
+
+.kpi-cards {
+  display: flex;
+  flex-direction: column; /* Stack KPI cards vertically */
+}
+
+.kpi-card {
+  background-color: #4472C4;
+  color: white;
+  padding: 10px; /* Smaller padding to fit */
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px; /* Space between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px; /* Smaller font size */
+}
+
+.kpi-card:hover {
+  background-color: #335599;
+  cursor: pointer;
+}

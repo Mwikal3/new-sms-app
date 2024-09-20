@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import "../styles/create-template.css";
+import { Link } from "react-router-dom";
 
 const CreateTemplate = () => {
   const [showModal, setShowModal] = useState(false);
@@ -29,10 +30,12 @@ const CreateTemplate = () => {
 
   return (
     <div className="create-template-container">
+       <Link to="/"><span>Home</span></Link> 
+
 
       <h2>Create Template</h2>
       <div className="breadcrumb">
-        <span>Home</span> &gt; <span>Create Template</span>
+        {/* <span>Home</span> &gt; <span>Create Template</span> */}
       </div>
 
       <div className="template-list">
@@ -42,7 +45,7 @@ const CreateTemplate = () => {
       >
         + Add New Template
       </button>
-      
+
         <h3>Templates</h3>
         <table className="template-table">
           <thead>

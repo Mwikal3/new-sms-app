@@ -45,6 +45,11 @@
     margin-bottom: 20px;
     width: 100%; /* Ensure it stretches fully */
   }
-  
+  .stats-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it stretches fully */
+  }
  
  

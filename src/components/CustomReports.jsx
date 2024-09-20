@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/custom-reports.css'; // Importing the CSS styles
+import { Link } from "react-router-dom";
 
 const CustomReports = () => {
   const [startDate, setStartDate] = useState("");
@@ -14,7 +15,10 @@ const CustomReports = () => {
 
   return (
     <div className="custom-reports-container">
+      <Link to="/"><h3>Home</h3></Link>
+
       <div className="reports-header">
+
         <h2>Reports &gt; Custom SMS</h2>
       </div>
       <div className="filters-container">

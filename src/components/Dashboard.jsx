@@ -1,7 +1,6 @@
 import React from 'react';
 import Statistics from './Statistics';
 import LastMessages from './LastMessages';
-import KPI from './KPI';
 import '../styles/dashboard.css';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +31,7 @@ const Dashboard = () => {
 
       <div className="stats-section">
         <Statistics />
-        <KPI />
+        {/* <KPI /> */}
       </div>
 
       <LastMessages />

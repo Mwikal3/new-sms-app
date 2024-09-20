@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/batched-reports.css'; // Importing the CSS styles
+import { Link } from "react-router-dom";
 
 const CustomReports = () => {
   const [startDate, setStartDate] = useState("");
@@ -14,8 +15,11 @@ const CustomReports = () => {
 
   return (
     <div className="custom-reports-container">
+      <Link to="/"><h3>Home</h3></Link>
+
       <div className="reports-header">
-        <h2>Reports &gt; Custom SMS</h2>
+        {/* <h2>Reports &gt; Custom SMS</h2> */}
+        <h2>Batch SMS History </h2>
       </div>
       <div className="filters-container">
         <div className="date-filter">
@@ -55,7 +59,7 @@ const CustomReports = () => {
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Search by recipient or message"
+            placeholder="Search by batch name or message"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -70,9 +74,9 @@ const CustomReports = () => {
         <thead>
           <tr>
             <th>Date Sent</th>
-            <th>Recipient Number</th>
-            <th>Phone Number</th>
+            <th>Batch Name</th>
             <th>Message Content</th>
+            <th>No of Contacts</th>
             <th>Status</th>
             <th>Actions</th>
           </tr>

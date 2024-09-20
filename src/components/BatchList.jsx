@@ -28,7 +28,10 @@ const BatchManagement = () => {
 
   return (
     <div className="batch-management-container">
+          
+
       <main className="content">
+      <Link to="/"><h3>Home</h3></Link>
         <div className="batch-header">
           <h1>Batch Management</h1>
           <Link to="/" className="home-icon">🏠</Link>

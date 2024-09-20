@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/contact-details.css';
-
+import { Link } from 'react-router-dom';
 
 const ContactDetails = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -30,6 +30,7 @@ const ContactDetails = () => {
 
   return (
     <div className="contact-details">
+      <Link to="/"><h3>Home</h3></Link>
     
 
       <div className="top-section">

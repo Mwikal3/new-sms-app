@@ -1,5 +1,5 @@
-// src/components/Statistics.jsx
 import React from 'react';
+import KPI from './KPI';
 import '../styles/statistics.css';
 
 const Statistics = () => {
@@ -13,10 +13,16 @@ const Statistics = () => {
           <div className="chart">[Bar Chart]</div>
         </div>
 
-        <div className="pie-chart">
-          <h4>Delivery Status</h4>
-          {/* Add your pie chart */}
-          <div className="chart">[Pie Chart]</div>
+        <div className="pie-kpi-container">
+          <div className="pie-chart">
+            <h4>Delivery Status</h4>
+            {/* Add your pie chart */}
+            <div className="chart">[Pie Chart]</div>
+          </div>
+
+          <div className="kpi-wrapper">
+            <KPI />
+          </div>
         </div>
       </div>
     </div>

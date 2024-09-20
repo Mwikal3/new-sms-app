@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Approvals.css"; // Importing the CSS styles
+import { Link } from "react-router-dom";
 
 const Approvals = () => {
   const [startDate, setStartDate] = useState("");
@@ -18,6 +19,8 @@ const Approvals = () => {
 
   return (
     <div className="approvals-container">
+          <Link to="/"><h3>Home</h3></Link>
+
       <div className="approvals-header">
         <h2>Approvals</h2>
         <div className="breadcrumb">
