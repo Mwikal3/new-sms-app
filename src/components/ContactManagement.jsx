@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/contact-management.css';
-
+import ExpressTemplate from '../components/ExpressTemplate'; // Import the form component
 
 const ContactManagement = () => {
+  const [showExpressMessageForm, setShowExpressMessageForm] = useState(false); // State to toggle express message form
+
   const [searchQuery, setSearchQuery] = useState('');
   const [groups, setGroups] = useState([
-    // Example data - replace with real data as needed
     { name: 'Group 1', status: 'Active', group: 'Sales', dateAdded: '2023-09-01' },
     { name: 'Group 2', status: 'Inactive', group: 'Support', dateAdded: '2023-08-15' },
   ]);
@@ -18,15 +19,13 @@ const ContactManagement = () => {
     console.log('Add New Group clicked');
   };
 
+  // Function to toggle the express message form visibility
+  const toggleExpressMessageForm = () => {
+    setShowExpressMessageForm(!showExpressMessageForm);
+  };
+
   return (
     <div className="contact-management">
-      {/* <div className="header">
-        <h2>Contact Management</h2>
-        <div className="home-link">
-          <span>Home</span>
-        </div>
-      </div> */}
-
       <div className="toolbar">
         <div className="entries">
           <label>Entries</label>
@@ -73,15 +72,24 @@ const ContactManagement = () => {
                 <button className="delete-btn">Delete</button>
               </td>
               <td>
-                <button className="send-msg-btn">Send Message</button>
+                <button className="send-msg-btn" onClick={toggleExpressMessageForm}>
+                  Send Message
+                </button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
+      {/* Show the express message form when "Send Message" is clicked */}
+      {showExpressMessageForm && (
+        <ExpressTemplate onClose={toggleExpressMessageForm} />
+      )}
+
       <div className="send-message-footer">
-        <button className="send-message-btn">Send Message</button>
+        <button className="send-message-btn" onClick={toggleExpressMessageForm}>
+          Send Message
+        </button>
       </div>
     </div>
   );

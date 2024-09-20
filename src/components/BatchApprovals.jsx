@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Approvals.css"; // Importing the CSS styles
+import "../styles/batch-approvals.css"; // Importing the CSS styles
 
 const Approvals = () => {
   const [startDate, setStartDate] = useState("");
@@ -19,7 +19,7 @@ const Approvals = () => {
   return (
     <div className="approvals-container">
       <div className="approvals-header">
-        <h2>Approvals</h2>
+        <h2>Batch Approvals</h2>
         <div className="breadcrumb">
           <span>Home</span> &gt; <span>Approvals</span>
         </div>
@@ -75,7 +75,7 @@ const Approvals = () => {
           </tr>
         </thead>
         <tbody>
-          {/* Table rows */}
+          {/* Table rows  */}
           <tr>
             <td><input type="checkbox" /></td>
             <td>1</td>

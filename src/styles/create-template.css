@@ -2,6 +2,32 @@
     padding: 20px;
   }
   
+  .template-list {
+    margin-top: 20px;
+  }
+  
+  .template-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .template-table th,
+  .template-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .template-table th {
+    background-color: #4472C4; /* Primary color for header */
+    color: white;
+  }
+  
+  .template-table td {
+    background-color: #f9f9f9;
+  }
+
   .breadcrumb {
     font-size: 14px;
     color: #888;
@@ -19,6 +45,7 @@
   
   .add-template-button:hover {
     background-color: #355b99;
+    
   }
   
   .modal-overlay {

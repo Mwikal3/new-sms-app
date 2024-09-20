@@ -1,15 +1,25 @@
+
 import React, { useState } from "react";
-import "../styles/CreateTemplate.css";
+import "../styles/create-template.css";
 
 const CreateTemplate = () => {
   const [showModal, setShowModal] = useState(false);
   const [templateName, setTemplateName] = useState("");
   const [message, setMessage] = useState("");
 
+  // Initialize state for templates
+  const [templates, setTemplates] = useState([
+    { name: "Welcome Template", body: "Hello, welcome to our service!" },
+    { name: "Thank You Template", body: "Thank you for using our product!" },
+  ]);
+
   const handleAddTemplate = () => {
     // Logic to handle adding the template
-    console.log("Template Added:", { templateName, message });
+    const newTemplate = { name: templateName, body: message };
+    setTemplates([...templates, newTemplate]); // Update the templates array with the new one
     setShowModal(false);
+    setTemplateName("");
+    setMessage("");
   };
 
   const handleCancel = () => {
@@ -19,24 +29,50 @@ const CreateTemplate = () => {
 
   return (
     <div className="create-template-container">
-      <h2>Create Campaign</h2>
+
+      <h2>Create Template</h2>
       <div className="breadcrumb">
-        <span>Home</span> &gt; <span>Create Campaign</span>
+        <span>Home</span> &gt; <span>Create Template</span>
       </div>
 
+      <div className="template-list">
       <button
         className="add-template-button"
         onClick={() => setShowModal(true)}
       >
         + Add New Template
       </button>
+      
+        <h3>Templates</h3>
+        <table className="template-table">
+          <thead>
+            <tr>
+              <th>Template Name</th>
+              <th>Template Body</th>
+            </tr>
+          </thead>
+          <tbody>
+            {templates.map((template, index) => (
+              <tr key={index}>
+                <td>{template.name}</td>
+                <td>{template.body}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+
 
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-header">
               <h3>Add New Template</h3>
-              <button className="close-button" onClick={() => setShowModal(false)}>
+              <button
+                className="close-button"
+                onClick={() => setShowModal(false)}
+              >
                 &times;
               </button>
             </div>

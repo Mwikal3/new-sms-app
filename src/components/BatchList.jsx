@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/batch-management.css';
+import ExpressTemplate from '../components/ExpressTemplate'; // Import the form component
+import '../styles/batch-list.css';
 
 const BatchManagement = () => {
   const [batches, setBatches] = useState([
@@ -8,6 +9,8 @@ const BatchManagement = () => {
     { id: 2, date: '', timestamp: '', phoneNumber: '', message: '', status: 'Sent' },
     { id: 3, date: '', timestamp: '', phoneNumber: '', message: '', status: 'Failed' },
   ]);
+
+  const [showExpressMessageForm, setShowExpressMessageForm] = useState(false); // State to toggle express message form
 
   const handleEdit = (id) => {
     // Logic for handling edit
@@ -17,21 +20,25 @@ const BatchManagement = () => {
   const handleDelete = (id) => {
     // Logic for handling delete
     console.log('Delete batch', id);
-  };4
+  };
+
+  const toggleExpressMessageForm = () => {
+    setShowExpressMessageForm(!showExpressMessageForm); // Toggle form visibility
+  };
 
   return (
     <div className="batch-management-container">
-    
-
       <main className="content">
         <div className="batch-header">
-          <h1>Batch management</h1>
+          <h1>Batch Management</h1>
           <Link to="/" className="home-icon">🏠</Link>
         </div>
 
         <div className="batch-actions">
-          <button className="new-batch-btn">+ New batch</button>
-          <button className="express-message-btn">✉️ Express message</button>
+          <button className="new-batch-btn">+ New Batch</button>
+          <button className="express-message-btn" onClick={toggleExpressMessageForm}>
+            ✉️ Express Message
+          </button> {/* Add onClick to toggle the express message form */}
         </div>
 
         <div className="filters">
@@ -76,6 +83,9 @@ const BatchManagement = () => {
             ))}
           </tbody>
         </table>
+
+        {/* Conditionally render the express message form */}
+        {showExpressMessageForm && <ExpressTemplate onClose={toggleExpressMessageForm} />} {/* Show form when state is true */}
       </main>
     </div>
   );

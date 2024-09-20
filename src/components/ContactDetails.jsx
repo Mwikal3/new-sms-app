@@ -5,7 +5,7 @@ import '../styles/contact-details.css';
 const ContactDetails = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [contacts, setContacts] = useState([
-    // Sample data - Replace with actual contact data
+    // Sample data 
     { id: 1, contact: 'John Doe', group: 'Group A', dateAdded: '2023-09-01' },
     { id: 2, contact: 'Jane Smith', group: 'Group B', dateAdded: '2023-09-10' }
   ]);
@@ -17,22 +17,20 @@ const ContactDetails = () => {
   const handleUploadFile = (event) => {
     const file = event.target.files[0];
     console.log('File uploaded:', file);
-    // Handle file upload logic here
+    // upload logic here
   };
 
   const handleDelete = (id) => {
     console.log('Delete contact with ID:', id);
-    // Handle delete logic
+    // delete logic
+
+
+   
   };
 
   return (
     <div className="contact-details">
-      {/* <div className="header">
-        <h2>Contact Management</h2>
-        <div className="home-link">
-          <span>Home</span>
-        </div>
-      </div> */}
+    
 
       <div className="top-section">
         <div className="group-info">

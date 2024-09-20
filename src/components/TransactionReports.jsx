@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/transactional-reports.css'; // Importing the CSS styles
+import '../styles/transaction-reports.css'; // Importing the CSS styles
 
 const CustomReports = () => {
   const [startDate, setStartDate] = useState("");

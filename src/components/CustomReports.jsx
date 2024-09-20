@@ -78,7 +78,7 @@ const CustomReports = () => {
           </tr>
         </thead>
         <tbody>
-          {/* Table rows would be dynamically generated here */}
+          {/* Table rows */}
           <tr>
             <td>No Data Available</td>
           </tr>

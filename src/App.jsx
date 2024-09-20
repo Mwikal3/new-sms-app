@@ -10,9 +10,11 @@ import ContactManagement from './components/ContactManagement';
 import ContactDetails from './components/ContactDetails';
 import CustomReports from './components/CustomReports';
 import Approvals from './components/Approvals';
+import BatchList from './components/BatchList';
 import CreateTemplate from './components/CreateTemplate';
-import BatchManagement from './components/BatchManagement';
-
+import BatchApprovals from './components/BatchApprovals';
+import BatchedReports from './components/BatchedReports';
+import TranasactionReports from './components/TransactionReports';
 // styles
 import './App.css';
 
@@ -35,11 +37,13 @@ const App = () => {
             <Route path="/custom-reports" element={<CustomReports />} />
          
             <Route path="/Approvals" element={<Approvals />} />
-            <Route path="/create-template" element={<CreateTemplate />} />
-            <Route path="/batch-management" element={<BatchManagement />} />
+            <Route path="/create-template" element={<CreateTemplate/>} />
+            <Route path="/batch-list" element={<BatchList/>} />
+            <Route path="/batch-approvals" element={<BatchApprovals/>} />
 
-            {/* <Route path="/batched-reports" element={<BatchedReports />} />
-            <Route path="/transactional-reports" element={<TranasactionReports />} /> */}
+
+            <Route path="/batched-reports" element={<BatchedReports />} />
+            <Route path="/transactional-reports" element={<TranasactionReports />} />
 
 
 
